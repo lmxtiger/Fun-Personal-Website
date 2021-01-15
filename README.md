@@ -1,4 +1,2 @@
-Minxuan Liu
-A15134427
-firebase link
-Unfortunately table&list.html remained unfinished...
+A simple personal website I made as an extension of a class project. Will update
+and add new contents in the future. 
