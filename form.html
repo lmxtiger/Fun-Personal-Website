@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>This is Minxuan Liu</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <!--Top Navigation Bar-->
+    <div class="topnav">
+      <a href="index.html">HOME</a>
+      <div class="dropdown">
+          <div class="dropbtn">PICS</div>
+          <div class="dropdown-content">
+            <a href="images.html#movies">MOVIES</a>
+            <a href="images.html#tech">TECH</a>
+            <a href="images.html#sd">SAN DIEGO</a>
+          </div>
+      </div>
+      <a class="active" href="form.html">FORM</a>
+      <a href="table_and_lists.html">SCHEDULE</a>
+      <a href="externals.html">IWORLD</a>
+      <div class="topnav-right">
+          <a href="about_me.html">ABOUT ME</a>
+      </div>
+    </div>
+    <!--Progress bar-->
+    <br><label for="survey">Your Progress: </label>
+    <progress id="survey" value="0"></progress><span class="required"> * </span>Required<br><br>
+    <!--action attribute: posting the form to the test endpoint 
+      using the HTTP method post-->
+    <form action="http://httpbin.org/post" method="POST" 
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)+50">
+      <fieldset tabindex="1">
+        <legend>Personalia: </legend>
+        Name: <span class="required">* </span><input type="text" maxlength="30" required autofocus><br>
+        Email: <span class="required">* </span><input type="text" autocomplete="on" required placeholder="ex: abc123@gmail.com"><br>
+        <!--Phone number pattern: use "regular expression"-->
+        Number: <span class="required">* </span><input type="text" required pattern="^[2-9]\d{2}-\d{3}-\d{4}$"
+        placeholder="000-000-0000"><br>
+        Date of birth: <span class="required">* </span><input type="date" min="1900-01-01" max="2020-01-22" required><br>
+        Monthly Income (k): <input type="number" disabled><br>
+        Currently living in (Country): <input type="text" value="USA" readonly><br>
+        Number of pet you own(ed): <input type="number" value="0" min="0" max="100"><br>
+      </fieldset><br>
+      <fieldset tabindex="2">
+        <legend>Your Choice: </legend>
+        <!--Default color: RED-->
+        Preferred Color: <input type="color" value="#ff0000"><br>
+        Preferred vehicle: <br>
+        <input type="checkbox" value="bike" checked>Bike
+        <input type="checkbox" value="car">Car
+        <input type="checkbox" value="airplane">Airplane
+        <input type="checkbox" value="rocket">Rocket<br>
+        Preferred Car Brand: 
+        <select name="cars" multiple>
+          <optgroup label="German Cars">
+            <option value="BMW">BMW</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+          </optgroup>
+          <optgroup label="Japanese Cars">
+            <option value="Lexus">Lexus</option>
+            <option value="Honda">Honda</option>
+            <option value="Infiniti">Infiniti</option>
+          </optgroup>
+        </select><br><br>
+        Preferred Internet Browser:
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </fieldset><br>
+      <fieldset tabindex="3">
+        <legend>Fun: </legend>
+        The following program will predict your lucky number!<br>
+        <!--Keep the following empty form tag: so that lucky number gets displayed-->
+        Your self-estimated IQ: 
+        50<input type="range" id="a" value="50">150<br>
+        The last 2 digit of your credit card number:
+        <input type="number" id="b" value="50"><br>
+        Your lucky number is: 
+        <output name="x" for="a b"></output><br>
+        My words to you: 
+        <input type="hidden" value="You are a warrior, you are my hero!"> 
+        <meter value="100" min="0" max="100">Decoration</meter>,
+        <meter value="100" min="0" max="100">Decoration</meter>
+        <br>(You CANNOT see!)
+      </fieldset><br>
+      <fieldset tabindex="4">
+        <legend>Your voice: </legend>
+        What do you like to say to my website? <br><br>
+        <textarea name="advise" rows="15" cols="30"></textarea>
+      </fieldset><br>
+      <nav>
+      <button type="submit" tabindex="5">SUBMIT</button>
+      </nav><br><br>
+    </form>
+  </body>
+</html>

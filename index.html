@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>This is Minxuan Liu</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+    .main .middle_screen img{
+      /* position: relative; & top/left/right/bottom: Npx; go hand in hand */
+      position: relative;
+      top: 25px;
+      border-radius: 30%;
+      width: 150px;
+      opacity: 0.75;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!--Top Navigation Bar-->
+    <div class="topnav">
+      <a class="active" href="index.html">HOME</a>
+      <div class="dropdown">
+          <div class="dropbtn">PICS</div>
+          <!-- <a>PICS</a> -->
+          <div class="dropdown-content">
+            <a href="images.html#movies">MOVIES</a>
+            <a href="images.html#tech">TECH</a>
+            <a href="images.html#sd">SAN DIEGO</a>
+          </div>
+      </div>
+      <a href="form.html">FORM</a>
+      <a href="table_and_lists.html">SCHEDULE</a>
+      <a href="externals.html">IWORLD</a>
+      <div class="topnav-right">
+          <a href="about_me.html">ABOUT ME</a>
+      </div>
+    </div>
+
+    <!--bg pic cover starting from here-->
+    <div id="pic_yes"> 
+      <div id = "top_div">
+        <h1>This is Minxuan Liu</h1>
+      </div>
+
+      <div class="main">
+        <!--Left screen-->
+        <div class="left_screen">
+          <details>
+            <summary>Java's message to you</summary>
+            <!--'pre' tag: Preserve whitespace and every bit of format -->
+            <pre style="color: blue;"><code>
+  class 2020 {
+    public static void main(String[] args) {
+      System.out.println("Happy 2020!");
+    }
+  }
+            </code></pre>
+          </details>
+        </div>
+
+        <!--Middle screen-->
+        <div class="middle_screen">
+          <!--insert a profile pic-->
+          <img src="pics/profile_dog.jpg" alt="profile_dog">
+          <h2>Contact</h2>
+          <div>
+            Phone: 858-900-4869<br>
+            Personal Email: realnimiliu@gmail.com</div>
+          <h2>Education</h2>
+          <div>
+            Major: Math-Computer Science & Economics<br>
+            School: University of California San Diego<br>
+            Current standing: <mark>Senior</mark>
+          </div>
+          <h2>Interests</h2>
+          <div>Soccer, movies, strategy board games, workout, and <em>programming</em>!</div>
+        </div>
+
+        <!--Right screen-->
+        <div class="right_screen">
+          <section>
+            <Address>
+              <b>Address</b><br>
+              La Jolla, San Diego, CA<br>
+              United States
+            </Address>
+          </section>
+        </div>
+      </div>
+
+      <div id = "bottom_div"><br>
+        <div style="color:blue; margin: 5px;">
+          Click below to learn more about my work!
+        </div>
+        <!--window.open(): opens the link in a new tab-->
+        <button onclick="window.open('https://github.com/lmxtiger', '_blank')">
+          Go to my GitHub
+        </button>
+      </div>
+    </div>
+    
+    <footer id='footer'><br>
+      <div>Be What's Next!</div>
+    </footer>
+
+    <!-- JS -->
+    <script src="scripts/main.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.8.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.8.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
+ 
