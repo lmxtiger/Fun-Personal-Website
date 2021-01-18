@@ -95,7 +95,7 @@ h1 {
   color: blue;
   text-align: center;
 }
-h2 {
+.middle_screen h2 {
   font-style: italic;
 }
 p, li {
@@ -121,10 +121,12 @@ nav {
 }
 #pic_yes {
   background-image: url(../pics/Protruding-Squares.svg);
+  background-color: rgba(255,255,255, 0.3); /* Make the bg pic more transparent; texts more obvious */
   background-blend-mode: lighten;
   width: 100%;
   height: 88%;
   position: static;
+  /* opacity: 0.75;  <== Will change the transparency of all elements on the page */
 }
 #top_div{
   display:inline-block;
@@ -138,7 +140,7 @@ nav {
 .main{
   /*text-align: center;*/
   /* display: table-cell; */
-  height: 75%;
+  height: 70%;
   width: 100%;
   /* all main boxes' top == top_div's bottom */
   vertical-align: top; 
@@ -150,6 +152,11 @@ nav {
   height: 100%;
   overflow: auto;
   float: left;
+  display: block;
+}
+.middle_screen section {
+  position: relative;
+  border-top: 20px;
 }
 .left_screen{
   width: 33.33%;
@@ -160,7 +167,7 @@ nav {
 .left_screen details{
   position: relative;
   /* padding-left: 25px; */
-  left: 25px;
+  left: 40px;
   top: 25px;
   border-style: dotted;
   border-color: blue;
@@ -174,7 +181,7 @@ nav {
 }
 .right_screen section{
   position: relative;
-  right: 25px;
+  right: 40px;
   top: 25px;
   border-style: dotted;
   border-color: blue;
@@ -182,12 +189,13 @@ nav {
   /* float: not 'none' ==> by default: display: block */
   float: right;
 }
+
 #bottom_div{
   /* float: left; */
   text-align: center;
   display: inline-block;
   background-size: cover;
-  height: 13%;
+  height: 18%;
   width: 100%;
   margin: 0;
 }
@@ -257,16 +265,18 @@ h3{
 }
 .scheduleContainer div{
   border-radius: 10px;
+  text-align: center;
+  /* padding-top: ; */
 }
 .weekday{
   background-color: orangered;
-  text-align: center;
+  /* text-align: center; */
   font-weight: bold;
   /*font-family: Arial, Helvetica, sans-serif;*/
 }
 .weekend{
   background-color:lightgreen;
-  text-align: center;
+  /* text-align: center; */
   font-weight: bold;
 }
 .Mo{

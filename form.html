@@ -5,6 +5,7 @@
     <title>This is Minxuan Liu</title>
     <link rel="stylesheet" href="styles/main.css">
   </head>
+
   <body>
     <!--Top Navigation Bar-->
     <div class="topnav">
@@ -24,13 +25,13 @@
           <a href="about_me.html">ABOUT ME</a>
       </div>
     </div>
+
     <!--Progress bar-->
     <br><label for="survey">Your Progress: </label>
     <progress id="survey" value="0"></progress><span class="required"> * </span>Required<br><br>
-    <!--action attribute: posting the form to the test endpoint 
-      using the HTTP method post-->
-    <form action="http://httpbin.org/post" method="POST" 
-    oninput="x.value=parseInt(a.value)+parseInt(b.value)+50">
+    <!--action attribute: posting the form to the test endpoint using the HTTP method post-->
+    <form action="http://httpbin.org/post" method="POST" oninput="x.value=parseInt(a.value)+parseInt(b.value)+50">
+
       <fieldset tabindex="1">
         <legend>Personalia: </legend>
         Name: <span class="required">* </span><input type="text" maxlength="30" required autofocus><br>
@@ -43,6 +44,7 @@
         Currently living in (Country): <input type="text" value="USA" readonly><br>
         Number of pet you own(ed): <input type="number" value="0" min="0" max="100"><br>
       </fieldset><br>
+
       <fieldset tabindex="2">
         <legend>Your Choice: </legend>
         <!--Default color: RED-->
@@ -76,6 +78,7 @@
           <option value="Safari">
         </datalist>
       </fieldset><br>
+
       <fieldset tabindex="3">
         <legend>Fun: </legend>
         The following program will predict your lucky number!<br>
@@ -92,11 +95,13 @@
         <meter value="100" min="0" max="100">Decoration</meter>
         <br>(You CANNOT see!)
       </fieldset><br>
+
       <fieldset tabindex="4">
-        <legend>Your voice: </legend>
+        <legend>Your Thoughts: </legend>
         What do you like to say to my website? <br><br>
         <textarea name="advise" rows="15" cols="30"></textarea>
       </fieldset><br>
+
       <nav>
       <button type="submit" tabindex="5">SUBMIT</button>
       </nav><br><br>
